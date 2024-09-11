@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header{
+    font-family: "Inter", sans-serif;
+}
+.container-fluid{
+    width: 100vw;
+}
+.header_address{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-bottom: 1px solid #E1E4E5;
+    height: 5.5vh;
+    font-size: 1rem;
+    font-weight: 500;
+    word-spacing: 3px;
+}
+.header_address_content{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.header_address_right{
+    >div{
+        >a{
+            text-decoration: none;
+            color: black;
+        }
+        >a:visited{
+            text-decoration: none;
+            color: black;
+        }
+        >a:hover{
+            color: #1CA8CB;
+        }
+    }
+}
+
+
+.header_navigation{
+  height: 10.5vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.header_navigation_logo{
+    background-color: #1CA8CB;
+    width: 10rem;
+    /* clip-path: circle(72.3% at 35% 51%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    >img{
+        width: 100%;
+        height: auto;
+        margin: 0.5rem;
+        margin-left: 0;
+        max-width: 196px;
+    }
+}
+.header_navigation_links{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 2px;
+    }
+    
+    a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: black;
+        transform: scaleX(0); /* Initially hidden */
+        transform-origin: bottom right; /* Start animation from the right */
+        transition: transform 0.3s ease-out; /* Smooth transition */
+    }
+    
+    a:hover::before,
+    a:focus::before {
+        transform: scaleX(1); /* Reveal the underline from left to right */
+        transform-origin: bottom left; /* Animate towards the left */
+    }
+}
+
+.header_navigation_qoute{
+    background-color: #fff;
+    width: 14rem;
+    /* clip-path: circle(72.3% at 35% 51%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >button{
+        border: none;
+        background-color: #113D48;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        }
+    >button {
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;
+
+        border: none;
+        background-color: #113D48;
+        color: white;
+        padding: 0.9rem 1.8rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       }
+       
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+       
+       >button:hover::before {
+        transform: translateX(0);
+       }
+}
+
+.header_navigation_button{
+    display: none;
+    width: 5rem;
+    >button{
+        background: #1CA8CB;
+        color: white;
+        width: 50%;
+        height: 2.5rem;
+        border: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*CSS for screens <=1024px wide*/
+    .header_address_left{
+        display: none;
+    }
+
+    .header_address{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header_navigation_links{
+        display: none;
+    }
+    .header_navigation_qoute{
+        display: none;
+    }
+    .header_navigation_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >button{
+            background: #1CA8CB;
+            color: white;
+            width: 50%;
+            height: 2.5rem;
+            border: none;
+            border-radius: 15%;
+            font-size: 1.26rem;
+            }
+    }
+  }

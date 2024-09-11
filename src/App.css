@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './assets/css/Header';
+@import './assets/css/Footer';
+@import './assets/css/Sidebar';
+@import './assets/css/Contact';
+@import './assets/css/FAQ';
+@import './assets/css/AboutUs';
+@import './assets/css/Home';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  /* cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewport="0 0 100 100" style="fill:rgb(97,178,228);"><circle cx="8" cy="8" r="8" /></svg>') 16 16, auto; */
+}
+html, body{
+  /* height: 100%; */
+  overflow-x: hidden !important;
+}

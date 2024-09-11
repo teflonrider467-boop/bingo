@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+
+h1 {
+  font-size: 8rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.65rem;
+}
+h4 {
+  font-size: 2.5rem;
+  font-family: "Montez", cursive;
+  font-style: normal;
+}
+.container-fluid{
+    width: 100vw;
+}
+
+.About_banner{
+    height: 60vh;
+    width: 100% ;
+    background-image: url(../images/breadcumb-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.About_go_together{
+    width: 95.75vw;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.About_go_together_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    order: 1;
+}
+.About_go_together_image{
+    height: 20rem;
+    width: 20rem;
+    overflow: hidden;
+    /* border-radius: 50% 0 50% 50%; */
+}
+.About_go_together_image_evil{
+    height: 40rem;
+    width: 20rem;
+    overflow: hidden;
+    /* border-radius: 50% 0 50% 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.About_go_together_image_1{
+    border-radius: 10rem 10rem 0 10rem;
+    height: 40rem;
+}
+.About_go_together_image_2{
+    border-radius: 50% 50% 50% 0;
+    
+}
+.About_go_together_image_3{
+    border-radius: 50% 0 50% 50%;
+    
+}
+
+.About_go_together_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image to cover the container while maintaining aspect ratio */
+  }
+.About_go_together_text{
+    text-align: start;
+    width: 30rem;
+    order: 2;
+}
+.About_go_together_tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.About_go_together_tabs_icon{
+    font-size: 3.5rem;
+    width: 5rem;
+    height:4.5rem;
+    border-radius: 50%;
+    background-color: #E9F6F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About_go_together_tabs_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start
+}
+.About_go_together_text_button{
+      >button{
+        border: none;
+        height: 4rem;
+        width: 12rem;
+        background-color: #113D48;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }
+
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+
+       >button:hover::before {
+        transform: translateX(0);
+       }
+}
+
+.About_services_offer_text{
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 100vw;
+    >h4, h2, p{
+        width: 85vw;
+        margin: 0 auto;
+    }
+    >p{
+        margin-top: 1rem;
+        width: 55vw;
+        line-height: 2rem;
+    }
+}
+
+.About_services_offer_cards{
+    width: 97.5vw;
+    min-height: 97.5vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.About_services_offer_card{
+    height: 28rem;
+    width: 18rem;
+    margin: 0 auto;
+    border-radius: 5%;
+    border: 2px solid gray;
+    transition: all 0.5s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.About_services_offer_card_image{
+    width: auto;
+    height: 60%;
+    border-radius: 5% 5% 0 0;
+    overflow: hidden;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+.About_services_offer_description{
+    height: 40%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E9F6F9;
+}
+.About_services_offer_card_title{
+    padding: 0.2rem 0.5rem;
+    >h3{
+        font-size: 1.5rem;
+    }
+}
+.About_services_offer_card_button{
+    >button{
+        margin: 0 auto;
+        border: 1px solid #1CA8CB;
+        height: 2rem;
+        width: 8rem;
+        background-color: #E9F6F9;
+        color: #113D48;
+        padding: 0.1rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }
+
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+
+       >button:hover::before {
+        transform: translateX(0);
+       }
+       >button:hover{
+        color: white;
+       }
+}
+
+.About_meet_guide{
+    margin-bottom: 5rem;
+}
+.About_meet_guide_text{
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 2rem;
+    >h2, h4{
+        margin: 0 auto;
+        width: 70vw;
+
+    }
+}
+.About_meet_guide_cards{
+    width: 90vw;
+    margin: 0 auto;
+}
+.About_meet_guide_card{
+    padding: 2px 0rem;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 27rem;
+    min-height: 80vh;
+    border: 1px solid rgb(202, 197, 197);
+    background: linear-gradient(to bottom, 
+                                rgba(0, 0, 0, 0) 40%, /* Transparent top half */
+                                #E9F6F9 40%), /* Solid color bottom half */
+                                url('../images/News_1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+}
+.About_meet_guide_card:hover{
+    .About_meet_guide_card_below_image{
+        background: #1CA8CB;
+        color: white;
+        transition: 0.2s;
+    }
+}
+.About_meet_guide_card_image{
+    margin: 0 auto;
+    width: 17rem;
+    height: 17rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+
+.About_meet_guide_card_name, .About_meet_guide_card_occupation, .About_meet_guide_card_links{
+    padding: 0 0.5rem;
+    >h3{
+        font-size: 1.7rem;
+        font-weight: 550;
+    }
+}
+.About_meet_guide_card_below_image{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: white;
+    padding: 1rem 1.5rem;
+}
+.About_meet_guide_card_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #113D48;
+}
+.link_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50% !important;
+    border: none;
+    background: white;
+    color: #1CA8CB;
+}
+
+.Home_marquee_container{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    height: 25vh;
+    /* background-color: #E9F6F9; */
+}
+.Home_marquee{
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: slide 30s linear infinite;
+    margin: 0 auto;
+    /* width: 100%; */
+    /* >img{
+        width: 10rem;
+    } */
+    >img{
+        width: 10rem;
+        max-width: none;
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+        z-index: 3 !important;
+    }
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,909 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+
+h1 {
+  font-size: 8rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.65rem;
+}
+h4 {
+  font-size: 2.5rem;
+  font-family: "Montez", cursive;
+  font-style: normal;
+}
+.container-fluid{
+    width: 100vw;
+}
+.Home_banners {
+  height: calc(100-10.5) vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+.Home_banner {
+  height: 90vh;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  /* align-items: center; */
+}
+.Home_banner_1 {
+  background-image: url(../images/banner_1.jpg);
+}
+.Home_banner_2 {
+  background-image: url(../images/banner_2.jpg);
+}
+.Home_banner_3 {
+  background-image: url(../images/banner_3.jpg);
+}
+.Home_banner_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  > button:last-child {
+    color: #000;
+    background-color: whitesmoke;
+  }
+    >button{
+        border: none;
+        height: 4rem;
+        width: 12rem;
+        background-color: #113D48;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        }
+    >button {
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;   
+        border: none;
+        background-color: #113D48;
+        color: white;
+        padding: 0.9rem 1.8rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       }
+
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+
+       >button:hover::before {
+        transform: translateX(0);
+       }
+}
+.Home_wonderful_place{
+    margin-bottom: 3rem;
+}
+.Home_wonderful_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_wonderful_slider {
+  height: calc(100-10.5) vh;
+  width: 100vw;
+  background-color: white; /* Background color of the slider */
+  margin-top: 1rem; 
+}
+
+.Home_wonderful_card {
+  text-align: center;
+}
+
+.Home_wonderful_slider_item {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 25%;
+  margin: 0 auto;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+.Home_wonderful_slider_item_1 {
+  background-image: url(../images/wonderful_place_1.jpg);
+}
+.Home_wonderful_slider_item_2 {
+  background-image: url(../images/wonderful_place_2.jpg);
+}
+.Home_wonderful_slider_item_3 {
+  background-image: url(../images/wonderful_place_3.jpg);
+}
+.Home_wonderful_slider_item_4 {
+  background-image: url(../images/wonderful_place_4.jpg);
+}
+.Home_wonderful_slider_item_5 {
+  background-image: url(../images/wonderful_place_5.jpg);
+}
+.Home_wonderful_slider_item_6 {
+  background-image: url(../images/wonderful_place_6.jpg);
+}
+.Home_destination {
+  width: 100vw;
+  text-align: center;
+}
+
+.Home_destination_slider {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 0.5rem;  
+}
+.mySwiper{
+    height: 80% !important;
+    width: 50%;
+}
+
+.swiper_image {
+  width: 100%;
+  height: 100%;        
+  /* object-fit: contain; */
+  overflow: hidden;
+  box-shadow: none;
+}
+.swiper-wrapper {
+  width: 30vw !important;
+  height: 300px;
+}
+.swiper-cube-shadow{
+    box-shadow: none;
+}
+
+
+.Home_go_together{
+    width: 95.75vw;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.Home_go_together_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    order: 1;
+}
+.Home_go_together_image{
+    height: 20rem;
+    width: 20rem;
+    overflow: hidden;
+    /* border-radius: 50% 0 50% 50%; */
+}
+.Home_go_together_image_evil{
+    height: 40rem;
+    width: 20rem;
+    overflow: hidden;
+    /* border-radius: 50% 0 50% 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.Home_go_together_image_1{
+    border-radius: 10rem 10rem 0 10rem;
+    height: 40rem;
+}
+.Home_go_together_image_2{
+    border-radius: 50% 50% 50% 0;
+    
+}
+.Home_go_together_image_3{
+    border-radius: 50% 0 50% 50%;
+    
+}
+
+.Home_go_together_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image to cover the container while maintaining aspect ratio */
+  }
+.Home_go_together_text{
+    text-align: start;
+    width: 30rem;
+    order: 2;
+}
+.Home_go_together_tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+/* Checkpoint */
+.Home_go_together_tabs_icon{
+    font-size: 3.5rem;
+    width: 5rem;
+    height:4.5rem;
+    border-radius: 50%;
+    background-color: #E9F6F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home_go_together_tabs_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start
+}
+.Home_go_together_text_button{
+      >button{
+        border: none;
+        height: 4rem;
+        width: 12rem;
+        background-color: #113D48;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }
+
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+
+       >button:hover::before {
+        transform: translateX(0);
+       }
+}
+
+.Home_recommended_places{
+    margin-bottom: 3rem;
+}
+
+.Home_recommended_places_text{
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 100vw;
+    >h4, h2, p{
+        width: 85vw;
+        margin: 0 auto;
+    }
+    >p{
+        margin-top: 1rem;
+        width: 55vw;
+        line-height: 2rem;
+    }
+}
+.Home_recommended_places_cards{
+    width: 100vw;
+    margin: 0 auto;
+}
+.Home_recommended_places_card{
+    height: 31rem;
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 5%;
+    border: 2px solid gray;
+}
+.Home_recommended_places_card_image{
+    width: auto;
+    height: 18rem;
+    border-radius: 5% 5% 0 0;
+    overflow: hidden;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+.Home_recommended_places_card_title, .Home_recommended_places_card_location{
+    padding: 0.2rem 0.5rem;
+    >h3{
+        font-size: 1.125rem;
+    }
+}
+.Home_recommended_places_card_rate_price{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 0.5rem;
+}
+.Home_recommended_places_card_interact{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.Home_recommended_places_card_duration{
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Home_recommended_places_card_button{
+    >button{
+        border: 1px solid gray;
+        height: 2rem;
+        width: 8rem;
+        background-color: white;
+        color: #113D48;
+        padding: 0.1rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }
+
+       >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+       }
+
+       >button:hover::before {
+        transform: translateX(0);
+       }
+}
+
+.Home_pleasure_tour{
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.Home_pleasure_tour_text{
+    width: 100vw;
+    text-align: center;
+    >h2, h4{
+        margin: 0 auto;
+        width: 70vw;
+
+    }
+}
+.Home_pleasure_tour_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 35rem;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    /* padding: 1rem; */
+}
+.Home_pleasure_tour_image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+.Home_pleasure_tour_image_2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    height: 30rem;
+}
+.Home_pleasure_tour_image_3{
+    height: 21rem;
+}
+
+.Home_circles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+/* Main circular div */
+.Home_circle {
+  width: 20rem;    /* Diameter of the circle */
+  height: 20rem;
+  border-radius: 50%;
+  border: 2px solid #1CA8CB;
+  position: relative; /* To position the dot relative to the circle */
+  padding: 1rem;
+}
+
+/* Dot that moves around */
+.Home_circle_dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #1CA8CB; /* Color of the dot */
+  border-radius: 50%;    /* Make the dot circular */
+  position: absolute;
+  top: 50%;                /* Start at the top of the circle */
+  left: 100%;
+  transform: translate(-50%, -50%);
+  /* animation: moveAround 8s linear infinite;  */
+}
+
+.Home_circle:hover{
+    >.Home_circle_dot{
+        animation: moveAround 8s linear infinite;
+        left: 50%;
+    }
+}
+
+/* Keyframes to animate the dot moving around the circle */
+@keyframes moveAround {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(10rem); /* 100px = circle radius */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(10rem);
+  }
+}
+
+.Home_circle_content{
+    background: #E9F6F9;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >.Home_circle_number{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    >.Home_circle_text{
+        font-size: 2rem;
+        /* font-weight: 800; */
+    }
+}
+.Home_meet_guide{
+    margin-bottom: 5rem;
+}
+.Home_meet_guide_text{
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 2rem;
+    >h2, h4{
+        margin: 0 auto;
+        width: 70vw;
+
+    }
+}
+.Home_meet_guide_cards{
+    width: 100vw;
+}
+.Home_meet_guide_card{
+    padding: 1rem 0;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 20rem;
+    height: 26rem;
+    border: 1px solid rgb(202, 197, 197);
+}
+.Home_meet_guide_card:hover{
+    .Home_meet_guide_card_below_image{
+        background: #1CA8CB;
+        color: white;
+        transition: 0.2s;
+    }
+}
+.Home_meet_guide_card_image{
+    margin: 0 auto;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+
+.Home_meet_guide_card_name, .Home_meet_guide_card_occupation, .Home_meet_guide_card_links{
+    padding: 0 0.5rem;
+    >h3{
+        font-size: 1.7rem;
+        font-weight: 550;
+    }
+}
+.Home_meet_guide_card_below_image{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #E9F6F9;
+    padding: 1rem 1.5rem;
+}
+.Home_meet_guide_card_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #113D48;
+}
+.link_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50% !important;
+    border: none;
+    background: white;
+    color: #1CA8CB;
+}
+
+.Home_testimonials{
+    margin-bottom: 3rem;
+}
+.Home_testimonials_text{
+    width: 100vw;
+    text-align: center;
+    >h2, h4{
+        margin: 0 auto;
+        width: 70vw;
+
+    }
+}
+.Home_testimonials_slider{
+    margin: 0 auto !important;
+    width: 100vw;
+    min-height: 40vh;
+    margin-top: 2rem;
+}
+.Home_testimonial_slide{
+    /* width: 40vw; */
+    width: 30rem;
+    height: 20rem;
+    /* margin-right: 2rem;    */
+    background: red;
+    border-radius: 25px;
+    padding: 1rem;
+}
+.Home_testimonial_slide_person{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home_testimonial_slide_personInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Home_testimonial_slide_person_image{
+    margin: 0 auto;
+    width:  5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    >img{
+        width: 100%;
+        height: 100%;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+    }
+}
+.Home_testimonial_slide_person_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.1rem;
+}
+.Home_testimonial_slide_description{
+    font-size: 1.5rem;
+    word-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+
+
+.Home_marquee_container{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    height: 25vh;
+    /* background-color: #E9F6F9; */
+}
+.Home_marquee{
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: slide 30s linear infinite;
+    margin: 0 auto;
+    /* width: 100%; */
+    /* >img{
+        width: 10rem;
+    } */
+    >img{
+        width: 10rem;
+        max-width: none;
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+        z-index: 3 !important;
+    }
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.Home_news{
+    margin-bottom: 4rem;
+    width: 100vw;
+    padding: 2rem;
+}
+
+.Home_news_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.Home_news_button{
+    >button{
+        border: 1px solid gray;
+        height: 3rem;
+        width: 12rem;
+        background-color: white;
+        color: #113D48;
+        padding: 0.1rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }          
+    >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+    }
+    >button:hover::before {
+        transform: translateX(0);        
+    }
+}
+.article_button{
+    border: none;
+    height: 4rem;
+    width: 12rem;
+}
+.Home_news_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 11rem; */
+    gap: 2rem;
+    width: 100vw;
+    padding: 0 1rem;
+}
+.Home_news_card{
+    width: 30%;
+    height: 45%;
+}
+.Home_news_card_image{
+    height: 70%;
+    width: 90%;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    border-radius: 20px;
+    >img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        /* transform: translate(-50%, -50%); */
+        max-width: none; /* Ensures the image is not constrained by its parent container */
+        transition: transform 0.5s ease;
+    }
+    >img:hover{
+        transform: scale(1.5);
+        border-radius: 20px;
+    }
+}
+.Home_news_card_date{
+    margin-top: 0.75rem;
+    color: gray;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.Home_news_card_title{
+    margin-top: 0.75rem;
+    >h5{
+    font-size: 1.5rem;
+    font-weight: 580;
+    }
+}
+.Home_news_card_button{
+    margin-top: 0.75rem;
+    >button{
+        border: 1px solid gray;
+        height: 3rem;
+        width: 12rem;
+        background-color: #113D48;
+        color:  white;
+        padding: 0.1rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: inherit;   
+        }          
+    >button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1CA8CB;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+    }
+    >button:hover::before {
+        transform: translateX(0);        
+    }
+}
+
+@media (max-width: 1024px) {
+    .mySwiper{
+        height: 80% !important;
+        width: 90%;
+    }
+    .Home_go_together_images{
+        order: 2;
+    }
+    .Home_go_together_text{
+        order: 1;
+    }
+    .Home_pleasure_tour{
+        margin-bottom: 80rem;
+        padding: 1rem;
+    }
+    .Home_pleasure_tour_image{
+        width: auto;
+        height: auto;
+    }
+    .Home_marquee_container{
+        margin-top: 30rem;
+    }
+    .Home_news_card{
+        width: 90vw;
+    }
+}

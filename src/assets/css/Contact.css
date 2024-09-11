@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size:  3.33rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+
+.contact_banner{
+    height: 60vh;
+    width: 100% ;
+    background-image: url(../images/breadcumb-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.contact_get_in_touch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 8rem 0;
+}
+.contact_touch_message{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.contact_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    /* width: 30%; */
+    height: 6rem;
+    border: 0.1px solid #dcdcdc;
+    border-radius: 10px;
+}
+.contact_card_icon{
+    font-size: 2rem;
+    background: #113D48;
+    color: whitesmoke;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_card_info{
+    text-align: start;
+    width: 75%;
+}
+.contact_card_info_head{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.contact_card_info_desc{
+    word-spacing: 0.1rem;
+}
+
+.contact-map{
+    width: 100vw;
+    >iframe{
+        width: 100%;
+    }
+}
